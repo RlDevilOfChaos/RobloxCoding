@@ -3,16 +3,16 @@ getgenv().autoupdatews = false;
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local z = library:CreateWindow("The Everything Menu") -- Creates the window
-local a = z:CreateFolder("Scripts")
+local a = z:CreateFolder("Main Scripts")
+local b = z:CreateFolder("Scripts")
 local x = z:CreateFolder("Player")
 local y = z:CreateFolder("Settings")
 
 
 
 -- Main Cheats
-
-a:Button("Remote Spy Menu",function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/fdzWP5nN'))()
+a:Button("Server Hop",function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/420dss1v'))()
 end)
 
 a:Button("Infinite Yield",function()
@@ -20,18 +20,14 @@ a:Button("Infinite Yield",function()
 end)
 
 
-a:Button("Anime Clicking Sim",function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/fb4DaLiT'))()
-end)
-
-
-a:Button("Server Hop",function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/420dss1v'))()
-end)
-
-
-
 -- Main Cheats
+
+-- My Other Stuff
+
+
+
+
+
 
 -- Player
 x:Slider("MovementSpeed",{
