@@ -70,8 +70,32 @@ function doBoost()
 end
 
 
+a:Toggle("Auto Gems",function(bool)
+    getgenv().autoGems = bool
+    print('Auto Gems is: ', bool)
+    if bool then
+        doGems()
+    end
+end)
 
-
+function doGems()
+    spawn(function()
+        while getgenv().autoGems == true do
+            local children = game:GetService("Workspace").GemsSpawned:GetChildren()
+            if game:GetService("Workspace").GemsSpawned:GetChildren() == 0 then
+                print("It has nothing")
+                wait()
+            else
+                for num, cont in pairs(children) do
+                    print(cont)
+                    wait()
+                end
+                wait()
+            end
+            -- Out of Check
+        end
+    end)
+end
 
 a:Toggle("Auto Algor",function(bool)
     getgenv().autoAlgor = bool
