@@ -79,10 +79,6 @@ x:Button("Get WS and JP",function()
     jpl:Refresh(jp)
 end)
 
-y:Button("Infinite Yield",function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
 y:Button("Clear Console",function()
     for i=1, 50 do
         print(string.rep(" ", i%2))
