@@ -24,19 +24,19 @@ end)
 
 -- My Other Stuff
 
-a:Button("Sword Factory X",function()
+b:Button("Sword Factory X",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/SwordFactoryX.lua'))()
 end)
 
-a:Button("BladeQuest",function()
+b:Button("BladeQuest",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/BladeQuest.lua'))()
 end)
 
-a:Button("BitCoin",function()
+b:Button("BitCoin",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/BitCoin.lua'))()
 end)
 
-a:Button("Bot Clicking Sim",function()
+b:Button("Bot Clicking Sim",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/BotClicckingSim.lua'))()
 end)
 
