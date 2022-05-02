@@ -5,7 +5,7 @@ getgenv().autoSell = false;
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local z = library:CreateWindow("Any Game") -- Creates the window
+local z = library:CreateWindow("Bitcoin Simulator") -- Creates the window
 local a = z:CreateFolder("Main Stuff")
 local b = z:CreateFolder("Player")
 local y = z:CreateFolder("Settings")
@@ -81,18 +81,35 @@ end)
 function doGems()
     spawn(function()
         while getgenv().autoGems == true do
+            local ccheck = game:GetService("Workspace").GemsSpawned
             local children = game:GetService("Workspace").GemsSpawned:GetChildren()
-            if game:GetService("Workspace").GemsSpawned:GetChildren() == 0 then
-                print("It has nothing")
-                wait()
-            else
-                for num, cont in pairs(children) do
-                    print(cont)
-                    wait()
-                end
-                wait()
+            x = 0
+
+            for i, v in  pairs(ccheck:GetChildren()) do
+                x += 1
             end
-            -- Out of Check
+
+            if x > 0 then
+                for num, cont in pairs(children) do
+                    local tpto = cont.Part.CFrame
+                    local Plyr = game.Players.LocalPlayer
+                    local getthis = cont.Part.ProximityPrompt
+                    Plyr.Character.HumanoidRootPart.CFrame = tpto * CFrame.new(0,4,0)
+                    wait(1)
+                    fireproximityprompt(getthis, 2)
+                    wait(1)
+                end
+            end
+
+            if x < 1 then
+
+            end
+
+
+            -- Out of check
+            wait()
+            
+
         end
     end)
 end
