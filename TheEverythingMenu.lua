@@ -4,7 +4,7 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 
 local z = library:CreateWindow("The Everything Menu") -- Creates the window
 local a = z:CreateFolder("Scripts")
-local b = z:CreateFolder("Player")
+local x = z:CreateFolder("Player")
 local y = z:CreateFolder("Settings")
 
 
@@ -33,7 +33,8 @@ end)
 
 -- Main Cheats
 
-b:Slider("MovementSpeed",{
+-- Player
+x:Slider("MovementSpeed",{
     min = 16; -- min value of the slider
     max = 100; -- max value of the slider
     precise = false; -- max 2 decimals
@@ -42,7 +43,7 @@ b:Slider("MovementSpeed",{
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value 
 end)
 
-b:Slider("Jump Power",{
+x:Slider("Jump Power",{
     min = 50; -- min value of the slider
     max = 200; -- max value of the slider
     precise = false; -- max 2 decimals
@@ -51,41 +52,33 @@ b:Slider("Jump Power",{
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
 end)
 
-local wsl = b:Label("Click the button", {
+local wsl = x:Label("Click the button", {
     TextSize = 15;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
 })
 
-local jpl = b:Label("Click the button", {
+local jpl = x:Label("Click the button", {
     TextSize = 15;
     TextColor = Color3.fromRGB(255,255,255);
     BgColor = Color3.fromRGB(69,69,69);
 })
 
-b:Button("Get WS and JP",function()
+x:Button("Get WS and JP",function()
     local ws = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
     local jp = game.Players.LocalPlayer.Character.Humanoid.JumpPower
     wsl:Refresh(ws)
     jpl:Refresh(jp)
 end)
 
--- Main Cheats
-
-
--- Settings
+y:Button("Infinite Yield",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 y:Button("Clear Console",function()
-    for i=1, 100 do
+    for i=1, 50 do
         print(string.rep(" ", i%2))
         end
 end)
 
 y:DestroyGui()
--- Settings
-
-y:Label("https://pastebin.com/raw/6sDy2832",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-})
