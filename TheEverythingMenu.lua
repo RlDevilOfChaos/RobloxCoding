@@ -21,7 +21,9 @@ end)
 a:Button("Server Hop",function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/ServerHop.lua'))()
 end)
-
+a:Button("Chat Spy",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/ChatSpy.lua'))()
+end)
 -- My Other Stuff
 
 b:Button("Sword Factory X",function()
