@@ -12,7 +12,7 @@ local y = z:CreateFolder("Settings")
 
 -- Main Cheats
 a:Button("Server Hop",function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/420dss1v'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/ServerHop.lua'))()
 end)
 
 a:Button("Infinite Yield",function()
@@ -24,9 +24,21 @@ end)
 
 -- My Other Stuff
 
+a:Button("Sword Factory X",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/SwordFactoryX.lua'))()
+end)
 
+a:Button("BladeQuest",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/BladeQuest.lua'))()
+end)
 
+a:Button("BitCoin",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/BitCoin.lua'))()
+end)
 
+a:Button("Bot Clicking Sim",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RlDevilOfChaos/RobloxCoding/main/Everything/BotClicckingSim.lua'))()
+end)
 
 
 -- Player
